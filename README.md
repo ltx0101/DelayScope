@@ -4,12 +4,39 @@ Evaluate various system components to measure their responsiveness in terms of l
 
 ## Key components tested:
 
-CPU Responsiveness: Measures how quickly the processor responds to complex operations.
+- **CPU Responsiveness: Measures how quickly the processor responds to complex operations.**
 
-Disk Responsiveness: Measures the disk’s read and write performance.
+- **Disk Responsiveness: Measures the disk’s read and write performance.**
 
-Memory Responsiveness: Assesses the memory performance by allocating and processing test data.
+- **Memory Responsiveness: Assesses the memory performance by allocating and processing test data.**
 
-Network Responsiveness: Evaluates network latency by pinging a target (Google DNS).
+- **Network Responsiveness: Evaluates network latency by pinging a target (Google DNS).**
 
-UI Responsiveness: Measures how quickly the system can respond to user interface operations.
+# How to Run
+
+### Run the command below in PowerShell:
+
+```ps1
+iwr "https://raw.githubusercontent.com/ltx0101/DelayScope/main/DelayScope.ps1" -OutFile "DelayScope.ps1"; .\DelayScope.ps1
+```
+
+---
+
+<details>
+<summary> Requirements </summary>
+
+- Windows 10/11
+- PowerShell
+- Administrator privileges
+</details>
+
+<details>
+<summary>Error "Running Scripts is Disabled on this System"</summary>
+
+### Run this command in PowerShell:
+
+```ps1
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+```
+</details>
+<div align="center">
