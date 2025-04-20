@@ -1,18 +1,26 @@
-﻿param (
+param (
     [int]$Iterations = 10,
     [switch]$IncludeNetworkTest,
     [switch]$IncludeUITest,
     [switch]$DetailedOutput
 )
 
- Write-Host "Please close everything, test will start in 5 seconds..."-ForegroundColor Yellow
- Start-Sleep -Seconds 1
+cls
+Write-Host "Please close everything, test will start in 5 seconds..." -ForegroundColor Yellow
+Start-Sleep -Seconds 1
+
+Write-Host "Test is starting in:" -ForegroundColor Green
+Start-Sleep -Seconds 1
 
 for ($i = 5; $i -gt 0; $i--) {
-    Write-Host "Test is starting in"$i"" -ForegroundColor Green
+    Write-Host "$i" -ForegroundColor Red
     Start-Sleep -Seconds 1
 }
 cls
+Write-Host "Test is starting now!" -ForegroundColor Cyan
+Start-Sleep -Seconds 1
+cls
+
 $results = @()
 
 function Write-ProgressHelper {
