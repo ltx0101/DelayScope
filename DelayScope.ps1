@@ -1,12 +1,17 @@
-$Host.UI.RawUI.BackgroundColor = 'Black'
-Clear-Host
-
 param (
     [int]$Iterations = 10,
     [switch]$IncludeNetworkTest,
     [switch]$IncludeUITest,
     [switch]$DetailedOutput
 )
+
+if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
+    Start-Process powershell -ArgumentList "-File `"$($MyInvocation.MyCommand.Path)`"" -Verb RunAs
+    exit
+}
+
+$Host.UI.RawUI.BackgroundColor = 'Black'
+Clear-Host
 
 cls
 Write-Host "Please close everything, test will start in 5 seconds..." -ForegroundColor Yellow
