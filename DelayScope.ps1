@@ -1,3 +1,6 @@
+$Host.UI.RawUI.BackgroundColor = 'Black'
+Clear-Host
+
 param (
     [int]$Iterations = 10,
     [switch]$IncludeNetworkTest,
