@@ -27,7 +27,6 @@ iwr "https://raw.githubusercontent.com/ltx0101/DelayScope/main/DelayScope.ps1" -
 
 - Windows 10/11
 - PowerShell
-- Administrator privileges
 </details>
 
 <details>
@@ -40,3 +39,17 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 ```
 </details>
 <div align="center">
+
+---
+
+<div align="center">
+   
+[![PayPal Donate](https://img.shields.io/badge/PayPal_Donate-s?style=for-the-badge&logo=paypal&logoColor=black)](https://paypal.me/AggelosMeta)
+
+</div>
+
+<div align="center">
+  
+Made with ❤️ and PowerShell  
+
+</div>
