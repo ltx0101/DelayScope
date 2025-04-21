@@ -71,7 +71,7 @@ function Measure-CpuResponsiveness {
 
 
 function Measure-DiskResponsiveness {
-    param([int]$Iterations = 5)
+    param([int]$Iterations = 20)
     
     $diskResults = @()
     $totalTime = 0
@@ -124,7 +124,7 @@ function Measure-DiskResponsiveness {
 }
 
 function Measure-MemoryResponsiveness {
-    param([int]$Iterations = 5)
+    param([int]$Iterations = 20)
     
     $memResults = @()
     $totalTime = 0
@@ -164,7 +164,7 @@ function Measure-MemoryResponsiveness {
 
 function Measure-NetworkResponsiveness {
     param(
-        [int]$Iterations = 10,
+        [int]$Iterations = 20,
         [string]$TestHost = "8.8.8.8"
     )
     
